@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Test grid fotografií</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="nav-container">
+            <h1 class="nav-logo">Test Grid</h1>
+            <ul class="nav-menu">
+                <li class="nav-item"><a href="index.html" class="nav-link">Domů</a></li>
+                <li class="nav-item"><a href="o-projektu.html" class="nav-link">O projektu</a></li>
+                <li class="nav-item"><a href="kontakt.html" class="nav-link">Kontakt</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <main class="main-content">
+        <!-- Přidáme controls panel -->
+        <div class="controls-panel">
+            <div class="control-group">
+                <label for="superellipseSlider">Tvar superelipsy:</label>
+                <div class="slider-container">
+                    <input type="range" id="superellipseSlider" min="-10" max="10" value="2.8" step="0.1" class="slider">
+                    <span id="superellipseValue">2.8</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="grid-container" id="photoGrid"></div>
+    </main>
+
+    <footer class="footer">
+        <div class="footer-content">
+            <p>&copy; Vytvoreno pomoci chatGPT</p>
+        </div>
+    </footer>
+
+    <script src="data.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
